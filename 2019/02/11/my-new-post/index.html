@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="成华的个人博客">
 <meta property="og:description" content="热烈祝贺我的个人博客开通！">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-11T08:53:13.052Z">
+<meta property="og:updated_time" content="2019-02-13T11:09:38.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的个人博客成功开通！">
 <meta name="twitter:description" content="热烈祝贺我的个人博客开通！">
@@ -97,14 +97,7 @@
 </header>
 	<div class="article-content">
 		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		
-			
-		
-		</div>
-		
-		<p>热烈祝贺我的个人博客开通！<br><a id="more"></a>，这里点击“更多”才能看到哦。</p>
+		<p>热烈祝贺我的个人博客开通！<br><a id="more"></a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -327,6 +320,11 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+  
+        getSize();
+        if (myWidth >= 1024) {
+          c.click();
+        }
   
   $(window).resize(function(){
     getSize(); 
